@@ -8,9 +8,17 @@ import kotlinx.coroutines.experimental.*
  */
 fun main(args: Array<String>) = runBlocking {
     val job = launch(CommonPool) {
-        repeat(1000) { i ->
-            println(i)
-            delay(100L)
+        try {
+            repeat(1000) { i ->
+                println(i)
+                delay(100L)
+            }
+        } finally {
+//            println("The usage is similar to Java. For example, execution after CancellationException")
+            run(NonCancellable) {//If need to execute suspended funtion
+                delay(1000L)
+                println("non-cancellable")
+            }
         }
     }
     delay(1200L)
