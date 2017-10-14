@@ -32,6 +32,13 @@ fun main(args: Array<String>) = runBlocking {
         println("The sum is ${first + second}")
 
         /*
+            Time  faster due to co-execution
+         */
+//        val first = async { delayFirst() }
+//        val second = async { delaySecond() }
+//        println("The sum is ${first.await() + second.await()}")
+
+        /*
             async returns a Deferred - a light-weight non-blocking future that represents a promise to provide a result later.
             Can use .await() on a deferred value to get its eventual result, but Deferred is also a Job -> can cancel it if needed.
          */
@@ -44,7 +51,7 @@ fun main(args: Array<String>) = runBlocking {
          */
 //        val first = async(CommonPool, CoroutineStart.LAZY) { delayFirst() }
 //        val second = async(CommonPool, CoroutineStart.LAZY) { delaySecond() }
-//        println("The sum withou 'second' is ${first.await()}")
+//        println("The sum without 'second' is ${first.await()}")
     }
     println("Time in ms: $time")
 }
