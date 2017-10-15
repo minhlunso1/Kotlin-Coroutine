@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1105e6b9-e0f1-4ae3-8a0c-1552b1b8ca11" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/Example1Kt$delayFirstWithRunBlocking$1.class" afterPath="$PROJECT_DIR$/out/production/classes/Example1Kt$delayFirstWithRunBlocking$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/Example1Kt$main$1.class" afterPath="$PROJECT_DIR$/out/production/classes/Example1Kt$main$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/Example1Kt.class" afterPath="$PROJECT_DIR$/out/production/classes/Example1Kt.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/context_dispatcher/DispatcherAndThread.kt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/example6.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/META-INF/coroutine-study_main.kotlin_module" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/coroutine-study_main.kotlin_module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/example1.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/example1.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -24,22 +23,12 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="example1.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/example1.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -385,6 +374,8 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/email_example.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/share_mutable_state/example1.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/example1.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/example6.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/context_dispatcher/DispatcherAndThread.kt" />
       </list>
     </option>
   </component>
@@ -442,22 +433,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="coroutine-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="coroutine-study" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="cancellation_timeout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="coroutine-study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="coroutine-study" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="share_mutable_state" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -488,7 +463,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.Example1Kt">
+  <component name="RunManager" selected="Kotlin.context_dispatcher.DispatcherAndThreadKt">
     <configuration name="Email_exampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Email_exampleKt" />
@@ -504,6 +479,18 @@
     <configuration name="Example1Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Example1Kt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="coroutine-study_main" />
+      <envs />
+    </configuration>
+    <configuration name="Example6Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Example6Kt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -594,21 +581,9 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="cancellation_timeout.Example3Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="context_dispatcher.DispatcherAndThreadKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="cancellation_timeout.Example3Kt" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="coroutine-study_main" />
-      <envs />
-    </configuration>
-    <configuration name="cancellation_timeout.Example4Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="cancellation_timeout.Example4Kt" />
+      <option name="MAIN_CLASS_NAME" value="context_dispatcher.DispatcherAndThreadKt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -631,19 +606,19 @@
       <envs />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Kotlin.cancellation_timeout.Example3Kt" />
-      <item index="1" class="java.lang.String" itemvalue="Kotlin.cancellation_timeout.Example4Kt" />
-      <item index="2" class="java.lang.String" itemvalue="Kotlin.Email_exampleKt" />
-      <item index="3" class="java.lang.String" itemvalue="Kotlin.share_mutable_state.Example1Kt" />
-      <item index="4" class="java.lang.String" itemvalue="Kotlin.Example1Kt" />
+      <item index="0" class="java.lang.String" itemvalue="Kotlin.Email_exampleKt" />
+      <item index="1" class="java.lang.String" itemvalue="Kotlin.share_mutable_state.Example1Kt" />
+      <item index="2" class="java.lang.String" itemvalue="Kotlin.Example1Kt" />
+      <item index="3" class="java.lang.String" itemvalue="Kotlin.Example6Kt" />
+      <item index="4" class="java.lang.String" itemvalue="Kotlin.context_dispatcher.DispatcherAndThreadKt" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Kotlin.Example1Kt" />
-        <item index="1" class="java.lang.String" itemvalue="Kotlin.share_mutable_state.Example1Kt" />
-        <item index="2" class="java.lang.String" itemvalue="Kotlin.Email_exampleKt" />
-        <item index="3" class="java.lang.String" itemvalue="Kotlin.cancellation_timeout.Example4Kt" />
-        <item index="4" class="java.lang.String" itemvalue="Kotlin.cancellation_timeout.Example3Kt" />
+        <item index="0" class="java.lang.String" itemvalue="Kotlin.context_dispatcher.DispatcherAndThreadKt" />
+        <item index="1" class="java.lang.String" itemvalue="Kotlin.Example6Kt" />
+        <item index="2" class="java.lang.String" itemvalue="Kotlin.Example1Kt" />
+        <item index="3" class="java.lang.String" itemvalue="Kotlin.share_mutable_state.Example1Kt" />
+        <item index="4" class="java.lang.String" itemvalue="Kotlin.Email_exampleKt" />
       </list>
     </recent_temporary>
   </component>
@@ -668,7 +643,7 @@
       <workItem from="1507401534953" duration="3268000" />
       <workItem from="1507628395703" duration="2188000" />
       <workItem from="1507977799275" duration="2547000" />
-      <workItem from="1508067349829" duration="381000" />
+      <workItem from="1508067349829" duration="2485000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1506854623985</created>
@@ -691,15 +666,21 @@
       <option name="project" value="LOCAL" />
       <updated>1507980821664</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lazily_started_async">
+      <created>1508067775588</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1508067775588</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21508000" />
+    <option name="totallyTimeSpent" value="23612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -710,7 +691,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -741,7 +722,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="catch_finally_timeout" />
     <MESSAGE value="async_concurrency" />
-    <option name="LAST_COMMIT_MESSAGE" value="async_concurrency" />
+    <MESSAGE value="lazily_started_async" />
+    <option name="LAST_COMMIT_MESSAGE" value="lazily_started_async" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -906,14 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/example2.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/email_example.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -930,11 +904,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/example2.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/context_dispatcher/DispatcherAndThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/context_dispatcher/DispatcherAndThread.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/example1.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        <state relative-caret-position="67">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/example6.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="29" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#179#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
