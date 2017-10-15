@@ -27,16 +27,19 @@ suspend fun delaySecond(): Int {
 
 fun main(args: Array<String>) = runBlocking {
     val time = measureTimeMillis {
-        val first = delayFirst()
-        val second = delaySecond()
-        println("The sum is ${first + second}")
+//        val first = delayFirst()
+//        val second = delaySecond()
+//        println("The sum is ${first + second}")
 
         /*
             Time  faster due to co-execution
          */
-//        val first = async { delayFirst() }
-//        val second = async { delaySecond() }
-//        println("The sum is ${first.await() + second.await()}")
+        val first = async { delayFirst() }
+        val second = async { delaySecond() }
+        //Lazily started async
+        val third = async (start = CoroutineStart.LAZY) { delayFirst() }
+        val fourth = async (start = CoroutineStart.LAZY) { delaySecond() }
+        println("The sum is ${first.await() + second.await()}")
 
         /*
             async returns a Deferred - a light-weight non-blocking future that represents a promise to provide a result later.
