@@ -17,8 +17,9 @@ fun main(args: Array<String>) = runBlocking {
 //            println("The usage is similar to Java. For example, execution after CancellationException")
             run(NonCancellable) {//If need to execute suspended funtion
                 delay(1000L)
-                println("non-cancellable")
+                println("non-cancellable suspsension")
             }
+            println("non-cancellable")
         }
     }
     delay(1200L)
