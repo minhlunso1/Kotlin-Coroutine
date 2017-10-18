@@ -6,7 +6,7 @@ import kotlinx.coroutines.experimental.*
  * @author Minh
  * 10/15/2017
  */
-fun main(args: Array<String>) = runBlocking<Unit> {
+fun main(args: Array<String>) = runBlocking<Unit> /* 1 */ {
     val jobs = arrayListOf<Job>()
     //not confined -- will work with main thread. Suitable for IO tasks which do not consume much CPU resources.
     jobs += launch(Unconfined) {
@@ -25,4 +25,7 @@ fun main(args: Array<String>) = runBlocking<Unit> {
         println("          'newSTC': I'm working in thread ${Thread.currentThread().name}")
     }
     jobs.forEach { it.join() }
+
+    //The coroutine context of 1
+    println("My job is ${coroutineContext[Job]}")
 }
