@@ -32,5 +32,17 @@ fun main(args: Array<String>) = runBlocking {
     delay(500)
     parent.cancel()
     delay(1000)
-    println("main end")
+    println("main end 1")
+
+    val parent2 = launch {
+        repeat(3) { i -> // launch a few children jobs
+            launch(coroutineContext)  {
+                delay((i + 1) * 200L) // variable delay 200ms, 400ms, 600ms
+                println("Coroutine $i is done")
+            }
+        }
+        println("parent2: Done, do not explicitly join my children that are still active")
+    }
+    parent2.join() // wait for completion of the request, including all its children
+    println("main end 2")
 }
