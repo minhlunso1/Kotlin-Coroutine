@@ -39,7 +39,7 @@ fun main(args: Array<String>) = runBlocking {
         //Lazily started async
         val third = async (start = CoroutineStart.LAZY) { delayFirst() }
         val fourth = async (start = CoroutineStart.LAZY) { delaySecond() }
-        println("The sum is ${first.await() + second.await()}")
+        println("The sum is ${third.await() + fourth.await()}")
 
         /*
             async returns a Deferred - a light-weight non-blocking future that represents a promise to provide a result later.
